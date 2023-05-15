@@ -157,7 +157,6 @@ img.picB {
 
 .map {
     width: 40%;
-    flex: 1;
 }
 
 .contact-section {
@@ -181,22 +180,21 @@ img.picB {
     justify-content: space-between;
 }
 
-.viet {
-    flex-direction: row-reverse;
-  }
-
-.contact-info {
-    flex: 1;
+.korea:hover, .viet:hover {
+    transform: scale(1.01);
 }
 
-main.product {
-    display: flex;
-    align-items: flex-start; 
-    padding-top: 50px;
+.viet {
+    flex-direction: row-reverse;
+}
+
+.map, .contact-info {
+    flex: 1;
+    padding: 20px;
 }
 
 .sidebar {
-    width: 200px;
+    width: 15%;
     padding: 20px;
     overflow: auto;
     display: flex;
@@ -215,12 +213,12 @@ main.product {
     margin: 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     height: 60%;
 }
   
 .sidebar li {
     margin-bottom: 10px;
+    margin-top: 20px;
 }
   
 .sidebar a {
@@ -228,13 +226,105 @@ main.product {
     text-decoration: none;
 }
 
+.sidebar ul li a:hover {
+    color: #999;
+}
+
 .about-container {
     display: flex;
-    justify-content: space-between;
-    padding: 50px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
 }
 
 .about-container img {
-    width: 600px;
-    height: 400px;
+    width: 700px;
+    height: 500px;
+}
+
+.description {
+    text-align: justify;
+    max-width: 900px;
+}
+  
+.description p {
+    margin-bottom: 1rem;
+}
+  
+.description p.hide {
+    display: none;
+}
+
+.language-selector {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 10px;
+}
+
+.language-button {
+    background-color: rgb(129, 129, 129);
+    color: #fff;
+    border: none;
+    text-align: center;
+    text-decoration: none; 
+    display: inline-block;
+    font-size: 13px; 
+    margin: 4px 2px; 
+    cursor: pointer; 
+    transition: background-color 0.3s;
+}
+  
+.language-button:hover {
+    background-color: rgb(70, 70, 70);
+}
+  
+
+main.product {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    align-items: flex-start;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-grow: 1;
+    width: 100%;
+    padding: 20px;
+}
+  
+.card {
+    flex-basis: calc(50% - 20px);
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+  
+.card img {
+    width: 100%;
+    height: auto;
+}
+  
+.card h4 {
+    margin: 20px 0 10px;
+}
+  
+.card p {
+    margin: 0;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.product-content {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
