@@ -328,19 +328,3 @@ main.product {
     flex-direction: column;
     align-items: center;
 }
-
-@media only screen and (max-width: 600px) {
-    nav ul {
-      flex-direction: column;
-    }
-  
-    /* 하위 메뉴도 세로로 쌓기 */
-    .button ul {
-      flex-direction: column;
-    }
-  
-    .button ul li {
-      display: block;
-    }
-}
-  
